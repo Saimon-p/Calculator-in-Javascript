@@ -1,0 +1,99 @@
+@font-face {
+    font-family: mi;
+    src: url('/MiSansLatin-Regular.otf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: mi;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    display: grid;
+    place-items: center;
+    height: 70vh;
+}
+
+.main-container{
+    /* border: 1px solid rgba(255, 255, 255, 0.233); */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 18, 18);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.top-display{
+    height: 1.5rem;
+    color: rgb(114, 112, 112);
+    display: grid;
+    place-items: center end;
+}
+
+.main-display{
+    height: 5rem;
+    color: rgb(190, 189, 189);
+    text-align: end;
+    display: grid;
+    place-items: center end;
+    font-size: 32px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.buttons-row{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.buttons-row.first button{
+    color: rgb(161, 105, 1);
+}
+
+.buttons-row.first button:last-child{
+    font-size: 32px;
+}
+
+.buttons-row.first button svg{
+    margin-bottom: -3px;
+    pointer-events: none;
+}
+
+.buttons-row button{
+    border-radius: 14px;
+    flex: 1;
+    font-size: 24px;
+    width: 5rem;
+    padding-block: 1rem;
+    background-color: rgb(36, 35, 35);
+    border: none;
+    color: rgb(214, 214, 214);
+    transition: 0.2s ease;
+}
+
+.buttons-row button:last-child{
+    color: orange;
+}
+
+.buttons-row.last button:last-child{
+    color: white;
+    background-color: rgb(161, 105, 1);
+    font-size: 32px;
+}
+
+.buttons-row.last button:first-child svg{
+    margin-bottom: -4px;
+}
+
+.buttons-row button:active{
+    transform: scale(0.94);
+    background-color: rgb(63, 60, 60);
+}
+
